@@ -1,0 +1,80 @@
+USE ESG_Project;
+
+-- Rename metadata columns
+EXEC sp_rename 'esg_wide_raw.column1', 'Country_Name', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column2', 'Country_Code', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column3', 'Indicator_Name', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column4', 'Indicator_Code', 'COLUMN';
+
+-- Rename year columns (1960-2024)
+EXEC sp_rename 'esg_wide_raw.column5', '[1960]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column6', '[1961]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column7', '[1962]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column8', '[1963]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column9', '[1964]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column10', '[1965]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column11', '[1966]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column12', '[1967]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column13', '[1968]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column14', '[1969]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column15', '[1970]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column16', '[1971]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column17', '[1972]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column18', '[1973]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column19', '[1974]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column20', '[1975]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column21', '[1976]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column22', '[1977]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column23', '[1978]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column24', '[1979]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column25', '[1980]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column26', '[1981]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column27', '[1982]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column28', '[1983]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column29', '[1984]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column30', '[1985]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column31', '[1986]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column32', '[1987]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column33', '[1988]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column34', '[1989]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column35', '[1990]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column36', '[1991]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column37', '[1992]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column38', '[1993]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column39', '[1994]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column40', '[1995]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column41', '[1996]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column42', '[1997]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column43', '[1998]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column44', '[1999]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column45', '[2000]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column46', '[2001]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column47', '[2002]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column48', '[2003]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column49', '[2004]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column50', '[2005]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column51', '[2006]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column52', '[2007]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column53', '[2008]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column54', '[2009]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column55', '[2010]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column56', '[2011]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column57', '[2012]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column58', '[2013]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column59', '[2014]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column60', '[2015]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column61', '[2016]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column62', '[2017]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column63', '[2018]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column64', '[2019]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column65', '[2020]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column66', '[2021]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column67', '[2022]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column68', '[2023]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column69', '[2024]', 'COLUMN';
+EXEC sp_rename 'esg_wide_raw.column70', '[2025]', 'COLUMN';
+
+DELETE FROM esg_wide_raw 
+WHERE Country_Name = 'Country Name';
+
+SELECT TOP 5 * FROM dbo.esg_wide_raw;
